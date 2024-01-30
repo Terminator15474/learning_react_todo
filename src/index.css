@@ -1,0 +1,89 @@
+* {
+    --background-color: rgb(20, 20, 20);
+    --font-size: 1.5em;
+    background-color: var(--background-color);
+    color: white;
+    margin: 0;
+}
+
+body {
+    height: 100%;
+}
+
+.title {
+    color: rgb(214, 120, 50);
+    text-align: center;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    font-size: 4em;
+    transform: translateX(30%);
+}
+
+.todoItemWrapper {
+    display: grid;
+    justify-content: center;
+}
+
+.todo {
+    font: var(--font-size) sans-serif;
+    width: fit-content;
+    border: 2px solid rgba(255, 255, 255, .2);
+    margin-bottom: 15px;
+}
+
+.todo > * {
+    margin: 5px;
+    display: inline-block;
+}
+
+
+input[type="checkbox"] {
+    width: var(--font-size);
+    height: var(--font-size);
+}
+
+.top-bar {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.addToDo {
+    margin-bottom: 1%;
+    margin-top: 1%;
+    font-size: 1em;
+    transform: translateX(800%);
+}
+
+.popup {
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    width: 20%;
+    left: 45%;
+    display: none;
+    z-index: 1000;
+}
+
+.inputField {
+    position: relative;
+}
+
+input[type="checkbox"] {
+    border: 5px solid rgba(255, 255, 255, .2);
+    accent-color: var(--background-color);
+    border-radius: 50px;
+    content: "";
+}
+
+.contextMenu {
+    position: absolute;
+    display: none;
+}
+
+.contextMenuButton {
+    border-color: var(--background-color);
+    font-size: medium;
+}
